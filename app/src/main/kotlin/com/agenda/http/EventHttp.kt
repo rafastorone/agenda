@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestParam
 import java.time.LocalDate
 
-class EventHttp : EventGateway{
+class EventHttp : EventGateway {
 
     @PostMapping("/event")
     override fun create(
@@ -49,7 +49,7 @@ class EventHttp : EventGateway{
         TODO("Not yet implemented")
     }
 
-    @GetMapping
+    @GetMapping("/event")
     override fun showById(
         @RequestParam(required = false) id: String
     ): Event {
